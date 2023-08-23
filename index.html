@@ -2,42 +2,73 @@
 <html lang="en">
 <head>
     <title>Pratics</title>
-    <style>
-        body{
-            background-color: #000;
-        }
-     .cal
-     {
-        display: flex;
-        margin: 5rem auto;
-        height: 75vh;
-        width: 30rem;
-        background-color: burlywood;
-        justify-content: center;
-     }
-     form
-     {
-       margin: 5rem 0;
-       position: relative;
-     }
-    .input-box{
-        padding: 0.5rem 1rem;
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <style>
+    body{
+      background-color: black;
     }
-    .label{
-        position: absolute;
-         top: 24px;
-         left: 10px;
+    .card{
+      height: auto;
+      width: 25rem;
+      margin: 5rem auto;
     }
-    </style>
+    .bg1{
+      background-color: whitesmoke;
+    }
+   </style>
 </head>
 <body>
-   <div class="cal">
-    <form >
-    <label for="box1" class="label">Enter Weight</label>
-    <br>
-      <input type="text" id="box1" name="box1" class="input-box">
 
-    </form>
-   </div>
+<div class="card bg1">
+  <form>
+
+    <div class="mb-2 px-5 mt-5">
+      <label for="InputAge" class="form-label text-secondary">Age</label>
+      <input type="text" class="form-control shadow-none border-0" id="InputAge">
+    </div>
+
+    <div class="mb-2  px-5 ">
+      <label for="Input1" class="form-label text-secondary">Enter Height</label>
+      <input type="text" class="form-control border-0 shadow-none" id="Input1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-2 px-5">
+      <label for="Input2" class="form-label text-secondary">Enter Weight</label>
+      <input type="password" class="form-control shadow-none border-0" id="Input2">
+    </div>
+    <div class="container ms-4 mt-4">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio1">
+      <label class="form-check-label" for="Radio1">Male</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Radio2">
+      <label class="form-check-label" for="Radio2">Female</label>
+    </div>
+  </div>
+    <br><br>
+    <button type="button" class="btn btn-success border-0  ms-5 mb-3">Success</button>
+    <button type="button" class="btn btn-secondary border-0  ms-2 mb-3">Success</button>
+    
+  </form>
+
+  <p class="container m-1 fw-semibold " id="res">Result :</p>
+
+<p class="container m-1 fw-semibold" id="hel">Health :</p>
+
+
+</div>
+
+
+
+
+<script>
+
+
+
+  
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
