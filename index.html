@@ -33,7 +33,7 @@
     </div>
     <div class="mb-2 px-5">
       <label for="Input2" class="form-label text-secondary">Enter Weight</label>
-      <input type="password" class="form-control shadow-none border-0" id="Input2">
+      <input type="text" class="form-control shadow-none border-0" id="Input2">
     </div>
     <div class="container ms-4 mt-4">
     <div class="form-check form-check-inline">
@@ -46,14 +46,12 @@
     </div>
   </div>
     <br><br>
-    <button type="button" class="btn btn-success border-0  ms-5 mb-3">Success</button>
-    <button type="button" class="btn btn-secondary border-0  ms-2 mb-3">Success</button>
+    <button type="button" class="btn btn-success border-0  ms-5 mb-3" onclick="result1()">Calculat</button>
+    <button type="button" class="btn btn-secondary border-0  ms-2 mb-3 px-4" onclick="clrs()">Clear </button>
     
   </form>
 
   <p class="container m-1 fw-semibold " id="res">Result :</p>
-
-<p class="container m-1 fw-semibold" id="hel">Health :</p>
 
 
 </div>
@@ -63,9 +61,25 @@
 
 <script>
 
+const age=document.getElementById('InputAge');
+const height=document.getElementById('Input1');
+const Weight=document.getElementById('Input2');
+const res=document.getElementById('res');
 
-
-  
+  function result1()
+  {
+    const val1= parseInt(height.value);
+    const val2= parseInt(Weight.value);
+    const cal= val2/(val1*val1)
+    res.innerText=`Result : ${cal}`
+  }
+  function clrs()
+  {
+    age.value='';
+    height.value='';
+    Weight.value='';
+    res.innerText='Result :'
+  }
 </script>
 
 
